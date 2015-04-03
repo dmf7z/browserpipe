@@ -1,0 +1,55 @@
+@import "bootstrap.less";
+@import "font-awesome.less";
+@import "colors.less";
+
+@navbar-bottom-border-width: 2px;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+}
+
+header.navbar {
+  border-bottom: @navbar-bottom-border-width solid @orange;
+
+  a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    color: @orange;
+  }
+}
+
+.row.first {
+  margin-top: 50px;
+}
+
+.reasons {
+  h3 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  b {
+    color: darken(@orange, 40%);
+  }
+}
+
+#form_invitation {
+  .btn {
+    color: @white;
+    background-color: @orange;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+
+  text-align: center;
+}

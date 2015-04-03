@@ -1,0 +1,26 @@
+{
+    "globals": {
+        "module": true,
+        "exports": true,
+        "require": true,
+        "__dirname": true,
+        "console": true,
+        "process": true,
+        "window": true,
+        "document": true,
+        "setTimeout": true,
+        "Buffer": true,
+        "location": true,
+        "XMLHttpRequest": true,
+        "clearTimeout": true
+    },
+    "asi": true,
+    "smarttabs": true,
+    "expr": true,
+    "newcap": false,
+    "supernew": true,
+    "unused": true,
+    "eqnull": true,
+    "eqeqeq": false,
+    "-W041": false
+}

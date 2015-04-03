@@ -1,0 +1,21 @@
+meta(charset='utf-8')
+meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+
+!= newrelic.getBrowserTimingHeader()
+
+title= appName+' - '+title
+meta(name="description", content="A site to visualize the information that you store")
+meta(name='viewport', content='width=device-width,initial-scale=1')
+meta(name="keywords", content="browserpipe.com, browser, virtual, tab, bookmark, note, visual, url, link")
+
+link(href=asset_url('favicon.ico'), rel='shortcut icon', type='image/x-icon')
+//Opengraph tags
+meta(property='og:title', content='#{appName} - #{title}')
+meta(property='og:description', content='A site to visualize the information that you store"')
+meta(property='og:type', content='website')
+meta(property='og:url', content='https://browserpipe.com')
+meta(property='og:image', content='https://browserpipe.com' + asset_url('img/logo/logo.png'))
+meta(property='og:site_name', content='Listboard.it: visualize your information')
+
+//Avoid resize
+meta(content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport')

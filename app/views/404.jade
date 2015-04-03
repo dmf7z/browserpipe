@@ -1,0 +1,9 @@
+extends layouts/index
+
+block content
+    h1 Page not found :(
+    #error-message-box
+        #error-stack-trace
+            - if(showStack)
+                pre
+                    code!= error.stack

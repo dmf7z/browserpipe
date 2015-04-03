@@ -1,0 +1,53 @@
+extends ../layouts/index
+
+block content
+    .row.first
+      .reasons.col-lg-6
+        h3
+          b archive
+          |  your tabs with 1 click
+        h3
+          | get
+          b  remainders
+          |  to do not forget to look them later
+        h3
+          | access them from
+          b  any device
+        h3
+          | get help with
+          b organizing
+        h3
+          | add
+          b  notes
+          | ,
+          b  hightlight
+          |  and
+          b   tag
+          |  them
+      .register-box.panel.panel-default.col-lg-4.col-lg-offset-1
+        .panel-body
+            #thanks_box.hide
+              h2 Thank you!
+              h4
+                | We will send you an invitation soon.
+              h4
+                | If you want to let us know why you would like an account or just share some feedback, please email us to
+                a(href="mailto:info@browserpipe.com", target="_blank") info@browserpipe.com
+              h4
+                | For more updates,
+                a(href="http://twitter.com/listboardit", target="_blank") follow us
+                | on Twitter.
+
+            form#form_invitation(action="/invites", method="post")
+              h2 Want to try it out?
+              h4
+                | We are progressively admitting new users. Feel free to leave us your email and we will contact you.
+              .form-group
+                input(type="text", name="invite_email", placeholder="Enter your email address", class="form-control")
+                span.help-inline.hide Please enter a valid email
+                .note-block No spam, we will only send you an invitation
+              .form-group
+                  button.btn.btn-lg(type="submit") Count me in!
+
+block bottom
+  script(src=asset_url('js/index.js'))

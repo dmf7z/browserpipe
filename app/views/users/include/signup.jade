@@ -1,0 +1,23 @@
+extends auth
+
+block auth
+    form#signup(action="/users", method="post")
+        .control-group
+            .controls
+                input#name(type='text', name="name", placeholder='Full name')
+
+        .control-group
+            .controls
+                input#email(type='text', name="email", placeholder='Email')
+
+        .control-group
+            .controls
+                input#password(type='password', name="password", placeholder='Password')
+
+        .control-group
+            .controls
+                button.btn.btn-warning.btn-big(type='submit') Sign up            
+                br
+                br                           
+                | &nbsp;or&nbsp;
+                a.show-login(href="/login") login
